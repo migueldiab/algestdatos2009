@@ -15,14 +15,14 @@ public class inicio_01 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        Integer v[] = {2,6,45,32,3,76,4,32,17,94};
+        int v[] = {2,6,45,32,3,76,4,32,17,94};
         int desde = 0;
         int hasta = 9;
-        ordeno(v, 2, 7);
+        v = ordeno(v, 5, 9);
         muestro(v, desde, hasta);
     }
 
-    private static boolean estaOrdenado(Integer[] v, int desde, int hasta) {
+    private static boolean estaOrdenado(int[] v, int desde, int hasta) {
         return true;
     }
 
@@ -30,42 +30,45 @@ public class inicio_01 {
         return (i==jj && j==ii);
     }
 
-    private static void intercambio(Integer i, Integer j) {
+    private static int[] intercambio(int[] v, int i, int j) {
         // pre
-        Integer ii=i;
-        Integer jj=j;
-        Integer aux = i;
-        i=j;
-        j=aux;
-        assert(estanIntercambiados(i,ii,j,jj));
+        int ii=v[i];
+        int jj=v[j];
+        int aux = v[i];
+        v[i]=v[j];
+        v[j]=aux;
+        assert(estanIntercambiados(v[i],ii,v[j],jj));
+        return v;
 
     }
 
-    private static void muestro(Integer[] v, int desde, int hasta) {
+    private static void muestro(int[] v, int desde, int hasta) {
         for (int i=desde;i<=hasta;i++) {
             System.out.println(v[i]);
         }
     }
 
-    private static void ordeno(Integer[] v, int desde, int hasta) {
+    private static int[] ordeno(int[] v, int desde, int hasta) {
         assert(desde<=hasta);
         // pre desde y hasta pertenecen al rango de v
 
-        for(int ultimo=hasta; ultimo>desde; ultimo--) {
-            intercambio(v[ultimo], v[posicionDelMayor(v,desde,ultimo)]);
+        for(int ultimo=hasta; ultimo>=desde; ultimo--) {
+            v = intercambio(v, ultimo, posicionDelMayor(v,desde,ultimo));
             
         }
 
         assert(estaOrdenado(v,desde,hasta));
         //pos contiene los mismos datos
+
+        return v;
     }
 
-    private static int posicionDelMayor(Integer[] v, int desde, int hasta) {
+    private static int posicionDelMayor(int[] v, int desde, int hasta) {
         assert(desde<=hasta);
         // pre desde y hasta pertenecen al rango de v
 
         int pos=desde;
-        for (int i=desde+1;i<hasta;i++) {
+        for (int i=desde+1;i<=hasta;i++) {
             if (v[i]>v[pos]) pos=i;
         }
         return pos;
