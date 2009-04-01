@@ -9,7 +9,7 @@ package obligatorio_1;
  *
  * @author alumno
  */
-public class Main {
+public class inicio {
 
     /**
      * @param args the command line arguments
