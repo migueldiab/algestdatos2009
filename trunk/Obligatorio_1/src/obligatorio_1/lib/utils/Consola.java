@@ -54,6 +54,14 @@ public class Consola {
 
 	}
 
+  public static void println(int[] v) {
+    Consola.println("Posición => Valor");
+    for (int i=0; i<v.length; i++) {
+      Consola.print(+i+" => ");
+      Consola.println(v[i]);
+    }
+  }
+
   public static void println(String s){
 
 		System.out.println(s);
