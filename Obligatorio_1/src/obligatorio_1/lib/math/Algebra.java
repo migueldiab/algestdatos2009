@@ -37,6 +37,11 @@ public class Algebra {
   }
 
   public static boolean estaOrdenado(int[] v, int desde, int hasta) {
+      for (int i=desde+1;i<hasta;i++) {
+        if (v[i-1] > v[i]) {
+          return false;
+        }
+      }
       return true;
   }
 
@@ -61,6 +66,9 @@ public class Algebra {
     }
   }
 
+  public static int[] ordenarAsc(int[] v) {
+    return ordeno(v, 0, v.length-1);
+  }
   public static int[] ordeno(int[] v, int desde, int hasta) {
     assert(desde<=hasta);
     // pre desde y hasta pertenecen al rango de v
