@@ -5,6 +5,8 @@
 
 package obligatorio_1.lib.math;
 
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import org.junit.After;
 import org.junit.AfterClass;
 import org.junit.Before;
@@ -18,28 +20,6 @@ import static org.junit.Assert.*;
  */
 public class AlgebraTest {
 
-    public AlgebraTest() {
-    }
-
-  @BeforeClass
-  public static void setUpClass() throws Exception {
-  }
-
-  @AfterClass
-  public static void tearDownClass() throws Exception {
-  }
-
-    @Before
-    public void setUp() {
-    }
-
-    @After
-    public void tearDown() {
-    }
-
-  /**
-   * Test of minimo method, of class Algebra.
-   */
   @Test
   public void testMinimoBorde1() throws Exception {
     System.out.println("testMinimoBorde1");
@@ -48,9 +28,7 @@ public class AlgebraTest {
     int result = Algebra.minimo(v);
     assertEquals(expResult, result);
   }
-  /**
-   * Test of minimo method, of class Algebra.
-   */
+
   @Test
   public void testMinimoBorde2() throws Exception {
     System.out.println("testMinimoBorde2");
@@ -59,9 +37,7 @@ public class AlgebraTest {
     int result = Algebra.minimo(v);
     assertEquals(expResult, result);
   }
-  /**
-   * Test of minimo method, of class Algebra.
-   */
+
   @Test
   public void testMinimoMedio() throws Exception {
     System.out.println("testMinimoMedio");
@@ -70,47 +46,37 @@ public class AlgebraTest {
     int result = Algebra.minimo(v);
     assertEquals(expResult, result);
   }
-  /**
-   * Test of minimo method, of class Algebra.
-   */
+
   @Test
   public void testMinimoNegativo() throws Exception {
-    System.out.println("testMinimoMedio");
+    System.out.println("testMinimoNegativo");
     int[] v = {6,5,3,56,-45,1,-23,54,-34,2};
     int expResult = -45;
     int result = Algebra.minimo(v);
     assertEquals(expResult, result);
   }
-  /**
-   * Test of posDelMinimo method, of class Algebra.
-   */
+
   @Test
   public void testPosDelMinimo() {
-    System.out.println("posDelMinimo");
+    System.out.println("testPosDelMinimo");
     int[] v = {6,5,3,56,-45,1,-23,54,-34,2};
     int expResult = 4;
     int result = Algebra.posDelMinimo(v);
     assertEquals(expResult, result);
   }
 
-  /**
-   * Test of menorDe5 method, of class Algebra.
-   */
   @Test
   public void testMenorDe5() throws Exception {
-    System.out.println("menorDe5");
+    System.out.println("testMenorDe5");
     int[] v = {6,5,3,56,45};
     int expResult = 3;
     int result = Algebra.menorDe5(v);
     assertEquals(expResult, result);
   }
 
-  /**
-   * Test of estaOrdenado method, of class Algebra.
-   */
   @Test
   public void testEstaOrdenado() {
-    System.out.println("estaOrdenado");
+    System.out.println("testEstaOrdenado");
     int[] v = {1,2,3,4,5,6,7,8,9};
     int desde = 2;
     int hasta = 7;
@@ -119,12 +85,9 @@ public class AlgebraTest {
     assertEquals(expResult, result);
   }
 
-  /**
-   * Test of estanIntercambiados method, of class Algebra.
-   */
   @Test
   public void testEstanIntercambiados() {
-    System.out.println("estanIntercambiados");
+    System.out.println("testEstanIntercambiados");
     int i = 1;
     int ii = 3;
     int j = 3;
@@ -134,12 +97,9 @@ public class AlgebraTest {
     assertEquals(expResult, result);
   }
 
-  /**
-   * Test of intercambio method, of class Algebra.
-   */
   @Test
   public void testIntercambio() {
-    System.out.println("intercambio");
+    System.out.println("testIntercambio");
     int[] v = {5,4,3,7,5,6,4,2,4};
     int i = 2;
     int j = 4;
@@ -148,24 +108,18 @@ public class AlgebraTest {
     assertArrayEquals(expResult, result);
   }
 
-  /**
-   * Test of ordenarAsc method, of class Algebra.
-   */
   @Test
   public void testOrdenarAsc() {
-    System.out.println("ordenarAsc");
+    System.out.println("testOrdenarAsc");
     int[] v = {8,34,2,3,2};
     int[] expResult = {2,2,3,8,34};
     int[] result = Algebra.ordenarAsc(v);
     assertArrayEquals(expResult, result);
   }
 
-  /**
-   * Test of ordeno method, of class Algebra.
-   */
   @Test
   public void testOrdeno() {
-    System.out.println("ordeno");
+    System.out.println("testOrdeno");
     int[] v = {5,4,3,78,56,23,2,1};
     int desde = 2;
     int hasta = 6;
@@ -174,12 +128,9 @@ public class AlgebraTest {
     assertArrayEquals(expResult, result);
   }
 
-    /**
-   * Test of ordeno method, of class Algebra.
-   */
   @Test
   public void testOrdenoUnicoElemento() {
-    System.out.println("ordeno");
+    System.out.println("testOrdenoUnicoElemento");
     int[] v = {5};
     int desde = 0;
     int hasta = 0;
@@ -188,12 +139,9 @@ public class AlgebraTest {
     assertArrayEquals(expResult, result);
   }
 
-    /**
-   * Test of ordeno method, of class Algebra.
-   */
   @Test
   public void testOrdenoIguales() {
-    System.out.println("ordeno");
+    System.out.println("testOrdenoIguales");
     int[] v = {3,3,3,3,3,3};
     int desde = 0;
     int hasta = v.length-1;
@@ -202,12 +150,9 @@ public class AlgebraTest {
     assertArrayEquals(expResult, result);
   }
 
-  /**
-   * Test of posicionDelMayor method, of class Algebra.
-   */
   @Test
   public void testPosicionDelMayor() {
-    System.out.println("posicionDelMayor");
+    System.out.println("testPosicionDelMayor");
     int[] v = {5,4,3,78,56,23,2,1};
     int desde = 2;
     int hasta = 6;
@@ -215,24 +160,21 @@ public class AlgebraTest {
     int result = Algebra.posicionDelMayor(v, desde, hasta);
     assertEquals(expResult, result);
   }
-  /**
-   * Test of posicionDelMayor method, of class Algebra.
-   */
+
   @Test
   public void testPosicionDelMayorIguales() {
-    System.out.println("posicionDelMayor");
+    System.out.println("testPosicionDelMayorIguales");
     int[] v = {0,0,0};
     int desde = 0;
     int hasta = 2;
     int expResult = 0;
     int result = Algebra.posicionDelMayor(v, desde, hasta);
     assertEquals(expResult, result);
-  }  /**
-   * Test of posicionDelMayor method, of class Algebra.
-   */
+  }
+
   @Test
   public void testPosicionDelMayorNegativos() {
-    System.out.println("posicionDelMayor");
+    System.out.println("testPosicionDelMayorNegativos");
     int[] v = {-15,-18,-3,-12,-6};
     int desde = 0;
     int hasta = 4;
@@ -240,4 +182,27 @@ public class AlgebraTest {
     int result = Algebra.posicionDelMayor(v, desde, hasta);
     assertEquals(expResult, result);
   }
+
+  @Test
+  public void testApareo() {
+    System.out.println("testApareo");
+    int[] v1 = {1,2,3};
+    int[] v2 = {4,5,6};
+    int[] expResult = {1,2,3,4,5,6};
+    int[] result;
+    result = Algebra.apareo(v1, v2);
+    assertArrayEquals(expResult, result);
+  }
+
+  @Test
+  public void testApareoVacio() {
+    System.out.println("testApareoVacio");
+    int[] v1 = {};
+    int[] v2 = {};
+    int[] expResult = {};
+    int[] result;
+    result = Algebra.apareo(v1, v2);
+    assertArrayEquals(expResult, result);
+  }
+
 }

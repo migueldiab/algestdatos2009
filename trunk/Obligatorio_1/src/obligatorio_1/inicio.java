@@ -6,6 +6,8 @@
 package obligatorio_1;
 
 import java.util.ArrayList;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import obligatorio_1.lib.math.Algebra;
 import obligatorio_1.lib.utils.Consola;
 import obligatorio_1.lib.utils.I18n;
@@ -60,20 +62,9 @@ public class Inicio {
         for (int i=0; i<listaVec2.length; i++) {
           v2[i] = Integer.parseInt(listaVec2[i]);
         }
-        int v[] = new int[listaVec1.length+listaVec2.length];
         Consola.print("La lista apareada y ordenada es : ");
-        try {
-          for (int i=0; i<listaVec1.length; i++) {
-            v[i] = v1[i];
-          }
-          for (int i=0; i<listaVec2.length; i++) {
-            v[i+listaVec1.length] = v2[i];
-          }
-          Consola.println(Algebra.ordenarAsc(v));
-        } catch (Exception ex) {
-          Consola.println("Error! - NumberFormatException");
-          Consola.println(ex.toString());
-        }
+        int[] v = Algebra.apareo(v1, v2);
+        Consola.println(Algebra.ordenarAsc(v));
       } catch (NumberFormatException e) {
         Consola.println("Error! - NumberFormatException");
         Consola.println(e.toString());
