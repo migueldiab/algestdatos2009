@@ -10,6 +10,17 @@ package obligatorio_1.lib.math;
  * @author Administrator
  */
 public class Algebra {
+
+  public static int[] apareo(int[] v1, int[] v2) {
+    int v[] = new int[v1.length+v2.length];
+    for (int i=0; i<v1.length; i++) {
+      v[i] = v1[i];
+    }
+    for (int i=0; i<v2.length; i++) {
+      v[i+v1.length] = v2[i];
+    }
+   return v;
+  }
   public static int minimo(int v[]) throws Exception {
     // pre - v no debe ser vacio
     if (v.length<1) throw new Exception("minimo incalculable");
