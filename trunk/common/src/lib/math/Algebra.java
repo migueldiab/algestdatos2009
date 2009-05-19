@@ -1,16 +1,39 @@
+package lib.math;
+
 /*
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
  */
 
-package obligatorio_1.lib.math;
+
 
 /**
  *
  * @author Administrator
  */
 public class Algebra {
-
+  public static int[] miMax(int[] v1, int desde, int hasta) throws AssertionError {
+    // MiMax basado en Dividir para Conquistar
+    assert (v1.length>desde) : "Desde es mayor que largo de vector";
+    assert (v1.length>hasta) : "Hasta es mayor que largo de vector";
+    int[] miMax = new int[2];
+    if (desde==hasta) {
+      miMax[0] = v1[desde];
+      miMax[1] = v1[desde];
+    }
+    else if (desde==(hasta-1)) {
+      miMax[0] = (v1[desde]<v1[hasta])?v1[desde]:v1[hasta];
+      miMax[1] = (v1[desde]>v1[hasta])?v1[desde]:v1[hasta];
+    }
+    else {
+      int medio = (desde+hasta)/2;
+      int[] tempMax1 = miMax(v1, desde,medio);
+      int[] tempMax2 = miMax(v1, medio+1, hasta);
+      miMax[0] = (tempMax1[0]<tempMax2[0])?tempMax1[0]:tempMax2[0];
+      miMax[1] = (tempMax1[1]>tempMax2[1])?tempMax1[1]:tempMax2[1];
+    }
+    return miMax;
+  }
   public static int[] apareo(int[] v1, int[] v2) {
     int v[] = new int[v1.length+v2.length];
     for (int i=0; i<v1.length; i++) {

@@ -3,7 +3,7 @@
  * and open the template in the editor.
  */
 
-package obligatorio_1.lib.utils;
+package lib.utils;
 
 import java.text.SimpleDateFormat;
 

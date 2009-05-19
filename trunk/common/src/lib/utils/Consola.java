@@ -3,7 +3,7 @@
  * and open the template in the editor.
  */
 
-package obligatorio_1.lib.utils;
+package lib.utils;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
@@ -12,7 +12,6 @@ import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.Date;
 import java.util.GregorianCalendar;
-import obligatorio_1.lib.utils.I18n;
 
 /**
  *

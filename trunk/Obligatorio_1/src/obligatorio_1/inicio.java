@@ -6,11 +6,9 @@
 package obligatorio_1;
 
 import java.util.ArrayList;
-import java.util.logging.Level;
-import java.util.logging.Logger;
-import obligatorio_1.lib.math.Algebra;
-import obligatorio_1.lib.utils.Consola;
-import obligatorio_1.lib.utils.I18n;
+import lib.math.Algebra;
+import lib.utils.Consola;
+import lib.utils.I18n;
 
 /**
  *
