@@ -3,14 +3,8 @@
  * and open the template in the editor.
  */
 
-package obligatorio_1.lib.math;
+package lib.math;
 
-import java.util.logging.Level;
-import java.util.logging.Logger;
-import org.junit.After;
-import org.junit.AfterClass;
-import org.junit.Before;
-import org.junit.BeforeClass;
 import org.junit.Test;
 import static org.junit.Assert.*;
 
