@@ -1,5 +1,7 @@
 package lib.math;
 
+import java.util.Random;
+
 /*
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
@@ -12,6 +14,32 @@ package lib.math;
  * @author Administrator
  */
 public class Algebra {
+
+  public static int[][] cuadradoLatino(int lado) throws Exception {
+    int[][] cuadradoLatino;
+    int retry = 0;
+    boolean esValido = false;
+    do {
+      cuadradoLatino = new int[lado][lado];
+      boolean timeout = false;
+      for (int i=0;i<lado;i++) {
+        for (int j=0;j<lado;j++) {
+          long start = System.currentTimeMillis();
+          long elapsedTimeMillis = 0;
+          do {
+            cuadradoLatino = crearCuadradoLatino(cuadradoLatino, i, j);
+            esValido = validarCuadradoLatino(cuadradoLatino);
+            elapsedTimeMillis = System.currentTimeMillis()-start;
+            if (elapsedTimeMillis>2) timeout = true;
+          } while (!esValido && !timeout);
+        }
+      }
+      if (timeout && retry>3000) throw new Exception("Timeout");
+      retry++;
+    } while (!esValido);
+    return cuadradoLatino;
+  }
+
   public static int[] miMax(int[] v1, int desde, int hasta) throws AssertionError {
     // MiMax basado en Dividir para Conquistar
     assert (v1.length>desde) : "Desde es mayor que largo de vector";
@@ -130,5 +158,36 @@ public class Algebra {
 
     // pos retorna la posición del mayor entre desde y hasta
   }
+
+  private static int[][] crearCuadradoLatino(int[][] cuadradoLatino, int i, int j) {
+    int temp = (new Random()).nextInt(cuadradoLatino[0].length);
+    temp++;
+    cuadradoLatino[i][j] = temp;
+    return cuadradoLatino;
+  }
+
+  private static boolean validarCuadradoLatino(int[][] cuadradoLatino) {
+    boolean esValido = true;
+    for (int i=0;i<cuadradoLatino[0].length;i++) {
+      for (int j=0;j<cuadradoLatino[0].length;j++) {        
+        for (int x=0;x<cuadradoLatino[0].length;x++) {
+          if (cuadradoLatino[i][j]!=0) {
+            if (x!=i) {
+              if (cuadradoLatino[x][j]==cuadradoLatino[i][j]) {
+                esValido = false;
+              }
+            }
+            if (x!=j) {
+              if (cuadradoLatino[i][x]==cuadradoLatino[i][j]) {
+                esValido = false;
+              }
+            }
+          }
+        }
+      }
+    }
+    return esValido;
+  }
+
 
 }
