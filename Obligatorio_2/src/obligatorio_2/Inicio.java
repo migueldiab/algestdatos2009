@@ -6,6 +6,8 @@
 package obligatorio_2;
 
 import java.util.ArrayList;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import lib.math.Algebra;
 import lib.math.Texto;
 import lib.utils.Consola;
@@ -98,16 +100,27 @@ public class Inicio {
   }
 
   private static void cuadradoLatino() {
-    int v[] = Consola.leerCSVInt("Ingrese la lista de números separados por coma \",\" : ");
-    if (v.length>0) {
-      try {
-        Consola.print("El minimo de los "+v.length+" es : ");
-        Consola.println(Algebra.minimo(v));
-      } catch (Exception ex) {
-        Consola.println("Error");
+    ArrayList<String> v = new ArrayList<String>();
+    int lado = Consola.leerInt("Ingrese el lado del Cuadrado Latino : ");
+    long start = System.currentTimeMillis();
+    int[][] cuadradoLatino;
+    try {
+      cuadradoLatino = Algebra.cuadradoLatino(lado);
+      long elapsedTimeMillis = System.currentTimeMillis()-start;
+      Consola.println("---------------");
+      for (int i=0; i<lado; i++) {
+        for (int j=0; j<lado; j++) {
+          Consola.print(cuadradoLatino[i][j]+"|");
+        }
+        Consola.println("");
       }
-      Consola.pausar();
+      Consola.println("---------------");
+      Consola.println("El cuadrado latino me llevó "+elapsedTimeMillis+" milisegundos en construir");
+      Consola.println("---------------");
+    } catch (Exception ex) {
+      Consola.println("Lo lamento! :( No pude crear un cuadrado latino...");
     }
+    Consola.pausar();
   }
 
 }
