@@ -15,6 +15,60 @@ import static org.junit.Assert.*;
 public class AlgebraTest {
 
   @Test
+  public void testMiMaxUnElemento() throws Exception {
+    System.out.println("testMiMaxUnElemento");
+    int[] v = {5};
+    int[] expResult = {5,5};
+    int[] result = Algebra.miMax(v, 0, 0);
+    assertArrayEquals(expResult, result);
+  }
+
+  @Test
+  public void testMiMaxUnElementoVector() throws Exception {
+    System.out.println("testMiMaxUnElemento");
+    int[] v = {5,3,4,5,2,2};
+    int[] expResult = {3,3};
+    int[] result = Algebra.miMax(v, 1, 1);
+    assertArrayEquals(expResult, result);
+  }
+
+  @Test
+  public void testMiMaxNegativos() throws Exception {
+    System.out.println("testMiMaxUnElemento");
+    int[] v = {-6,-9,-12,-14,-3,-4,-7};
+    int[] expResult = {-14,-3};
+    int[] result = Algebra.miMax(v, 0, v.length-1);
+    assertArrayEquals(expResult, result);
+  }
+
+  @Test
+  public void testMiMaxGenerico() throws Exception {
+    System.out.println("testMiMaxGenerico");
+    int[] v = {6,-9,12,14,-3,4,-7};
+    int[] expResult = {-9,14};
+    int[] result = Algebra.miMax(v, 0, v.length-1);
+    assertArrayEquals(expResult, result);
+  }
+
+  @Test
+  public void testMiMaxBordeA() throws Exception {
+    System.out.println("testMiMaxBordeA");
+    int[] v = {-20,-9,12,14,-3,4,30};
+    int[] expResult = {-20,30};
+    int[] result = Algebra.miMax(v, 0, v.length-1);
+    assertArrayEquals(expResult, result);
+  }
+
+  @Test
+  public void testMiMaxBordeB() throws Exception {
+    System.out.println("testMiMaxBordeB");
+    int[] v = {20,-9,12,14,-3,4,-30};
+    int[] expResult = {-30,20};
+    int[] result = Algebra.miMax(v, 0, v.length-1);
+    assertArrayEquals(expResult, result);
+  }
+
+  @Test
   public void testMinimoBorde1() throws Exception {
     System.out.println("testMinimoBorde1");
     int[] v = {1,2,3};
