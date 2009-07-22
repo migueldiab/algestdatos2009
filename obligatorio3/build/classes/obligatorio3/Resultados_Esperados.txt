@@ -1,0 +1,602 @@
+<pre><p>run:
+Se cre&oacute; el libro
+**************************************************************************
+  PRUEBA OK: AGREGAR CAPITULOS
+**************************************************************************
+
+----------------------------- Testeo --------------------------------
+
+  Comentario: Se agreg&oacute; el cap&iacute;tulo 1
+
+  Retorno de la app.: OK -&gt;        OK
+                .........OK.........
+---------------------------------------------------------------------
+
+
+----------------------------- Testeo --------------------------------
+
+  Comentario: Se agreg&oacute; el cap&iacute;tulo 2
+
+  Retorno de la app.: OK -&gt;        OK
+                .........OK.........
+---------------------------------------------------------------------
+
+Horacio Quiroga - Cuentos
+1 El solitario
+2 La insolacion
+
+----------------------------- Testeo --------------------------------
+
+  Comentario: Se mostr&oacute; el &iacute;ndice de cap&iacute;tulos
+
+  Retorno de la app.: OK -&gt;        OK
+                .........OK.........
+---------------------------------------------------------------------
+
+************************  Fin PRUEBA OK 1  ***********************
+*******************************************************************
+
+**************************************************************************
+  PRUEBA OK 2: AGREGAR SUB-CAPITULOS
+**************************************************************************
+
+----------------------------- Testeo --------------------------------
+
+  Comentario: Se agreg&oacute; el cap&iacute;tulo 1
+
+  Retorno de la app.: OK -&gt;        OK
+                .........OK.........
+---------------------------------------------------------------------
+
+
+----------------------------- Testeo --------------------------------
+
+  Comentario: Se agreg&oacute; el cap&iacute;tulo 2
+
+  Retorno de la app.: OK -&gt;        OK
+                .........OK.........
+---------------------------------------------------------------------
+
+
+----------------------------- Testeo --------------------------------
+
+  Comentario: Se agreg&oacute; el subcap&iacute;tulo 2.1
+
+  Retorno de la app.: OK -&gt;        OK
+                .........OK.........
+---------------------------------------------------------------------
+
+
+----------------------------- Testeo --------------------------------
+
+  Comentario: Se agreg&oacute; el cap&iacute;tulo 3
+
+  Retorno de la app.: OK -&gt;        OK
+                .........OK.........
+---------------------------------------------------------------------
+
+
+----------------------------- Testeo --------------------------------
+
+  Comentario: Se agreg&oacute; el subcap&iacute;tulo 2.2
+
+  Retorno de la app.: OK -&gt;        OK
+                .........OK.........
+---------------------------------------------------------------------
+
+
+----------------------------- Testeo --------------------------------
+
+  Comentario: Se agreg&oacute; el subcap&iacute;tulo 2.2.1
+
+  Retorno de la app.: OK -&gt;        OK
+                .........OK.........
+---------------------------------------------------------------------
+
+
+----------------------------- Testeo --------------------------------
+
+  Comentario: Se agreg&oacute; el subcap&iacute;tulo 2.2.2
+
+  Retorno de la app.: OK -&gt;        OK
+                .........OK.........
+---------------------------------------------------------------------
+
+
+----------------------------- Testeo --------------------------------
+
+  Comentario: Se agreg&oacute; el subcap&iacute;tulo 2.3
+
+  Retorno de la app.: OK -&gt;        OK
+                .........OK.........
+---------------------------------------------------------------------
+
+
+----------------------------- Testeo --------------------------------
+
+  Comentario: Se agreg&oacute; el subcap&iacute;tulo 2.3.1
+
+  Retorno de la app.: OK -&gt;        OK
+                .........OK.........
+---------------------------------------------------------------------
+
+Horacio Quiroga - Cuentos
+1 El solitario
+2 La insolacion
+  2.1 Parte 1
+  2.2 Parte 2
+    2.2.1 Seccion 1
+    2.2.2 Seccion 2
+  2.3 Parte 3
+    2.3.1  Seccion 3
+3 El alambre de pua
+
+----------------------------- Testeo --------------------------------
+
+  Comentario: Se mostr&oacute; el &iacute;ndice de cap&iacute;tulos
+
+  Retorno de la app.: OK -&gt;        OK
+                .........OK.........
+---------------------------------------------------------------------
+
+************************  Fin PRUEBA OK 2  ***********************
+*******************************************************************
+
+**************************************************************************
+  PRUEBA OK 3: BORRAR SUB-CAPITULOS
+**************************************************************************
+Horacio Quiroga - Cuentos
+1 El solitario
+2 La insolacion
+  2.1 Parte 1
+  2.2 Parte 2
+    2.2.1 Seccion 1
+    2.2.2 Seccion 2
+  2.3 Parte 3
+    2.3.1  Seccion 3
+3 El alambre de pua
+
+----------------------------- Testeo --------------------------------
+
+  Comentario: Se elimin&oacute; el subcap&iacute;tulo 2.2.1
+
+  Retorno de la app.: OK -&gt;        OK
+                .........OK.........
+---------------------------------------------------------------------
+
+Horacio Quiroga - Cuentos
+1 El solitario
+2 La insolacion
+  2.1 Parte 1
+  2.2 Parte 2
+    2.2.1 Seccion 2
+  2.3 Parte 3
+    2.3.1  Seccion 3
+3 El alambre de pua
+
+----------------------------- Testeo --------------------------------
+
+  Comentario: Se mostr&oacute; el &iacute;ndice de cap&iacute;tulos
+
+  Retorno de la app.: OK -&gt;        OK
+                .........OK.........
+---------------------------------------------------------------------
+
+************************ Fin PRUEBA OK 3 ***********************
+*******************************************************************
+
+**************************************************************************
+  PRUEBA OK 4: BORRAR CAPITULOS
+**************************************************************************
+Horacio Quiroga - Cuentos
+1 El solitario
+2 La insolacion
+  2.1 Parte 1
+  2.2 Parte 2
+    2.2.1 Seccion 1
+    2.2.2 Seccion 2
+  2.3 Parte 3
+    2.3.1  Seccion 3
+3 El alambre de pua
+
+----------------------------- Testeo --------------------------------
+
+  Comentario: Se elimin&oacute; el cap&iacute;tulo 2
+
+  Retorno de la app.: OK -&gt;        OK
+                .........OK.........
+---------------------------------------------------------------------
+
+Horacio Quiroga - Cuentos
+1 El solitario
+2 El alambre de pua
+
+----------------------------- Testeo --------------------------------
+
+  Comentario: Se mostr&oacute; el &iacute;ndice de cap&iacute;tulos
+
+  Retorno de la app.: OK -&gt;        OK
+                .........OK.........
+---------------------------------------------------------------------
+
+************************ Fin PRUEBA OK 4  ***********************
+*******************************************************************
+
+**************************************************************************
+  PRUEBA OK 5: MOSTRAR NIVELES
+**************************************************************************
+Horacio Quiroga - Cuentos
+1 El solitario
+2 La insolacion
+  2.1 Parte 1
+  2.2 Parte 2
+    2.2.1 Seccion 1
+    2.2.2 Seccion 2
+  2.3 Parte 3
+    2.3.1  Seccion 3
+3 El alambre de pua
+
+----------------------------- Testeo --------------------------------
+
+  Comentario: Se mostr&oacute; el &iacute;ndice de cap&iacute;tulos
+
+  Retorno de la app.: OK -&gt;        OK
+                .........OK.........
+---------------------------------------------------------------------
+
+Horacio Quiroga - Cuentos
+  2.1 Parte 1
+  2.2 Parte 2
+   2.2.1 Seccion 1
+   2.2.2 Seccion 2
+  2.3 Parte 3
+   2.3.1  Seccion 3
+
+----------------------------- Testeo --------------------------------
+
+  Comentario: Se mostraron niveles 2 y 3 de cap&iacute;tulos
+
+  Retorno de la app.: OK -&gt;        OK
+                .........OK.........
+---------------------------------------------------------------------
+
+************************ Fin PRUEBA OK 5 ***********************
+*******************************************************************
+
+**************************************************************************
+  PRUEBA OK 6: AGREGAR PALABRAS CLAVE
+**************************************************************************
+Horacio Quiroga - Cuentos
+1 El solitario
+2 La insolacion
+  2.1 Parte 1
+  2.2 Parte 2
+    2.2.1 Seccion 1
+    2.2.2 Seccion 2
+  2.3 Parte 3
+    2.3.1  Seccion 3
+3 El alambre de pua
+
+----------------------------- Testeo --------------------------------
+
+  Comentario: Se mostr&oacute; el &iacute;ndice de cap&iacute;tulos
+
+  Retorno de la app.: OK -&gt;        OK
+                .........OK.........
+---------------------------------------------------------------------
+
+
+----------------------------- Testeo --------------------------------
+
+  Comentario: Se agreg&oacute; palabra clave *camino* al cap&iacute;tulo 1
+
+  Retorno de la app.: OK -&gt;        OK
+                .........OK.........
+---------------------------------------------------------------------
+
+
+----------------------------- Testeo --------------------------------
+
+  Comentario: Se agreg&oacute; palabra clave *CABALLO* al cap&iacute;tulo 2
+
+  Retorno de la app.: OK -&gt;        OK
+                .........OK.........
+---------------------------------------------------------------------
+
+
+----------------------------- Testeo --------------------------------
+
+  Comentario: Se agreg&oacute; palabra clave *caballo* al cap&iacute;tulo 2.1
+
+  Retorno de la app.: OK -&gt;        OK
+                .........OK.........
+---------------------------------------------------------------------
+
+Horacio Quiroga - Cuentos
+1 El solitario: camino 
+2 La insolacion: CABALLO 
+  2.1 Parte 1: caballo 
+  2.2 Parte 2: 
+    2.2.1 Seccion 1: 
+    2.2.2 Seccion 2: 
+  2.3 Parte 3: 
+    2.3.1  Seccion 3: 
+3 El alambre de pua: 
+
+----------------------------- Testeo --------------------------------
+
+  Comentario: Se mostr&oacute; el &iacute;ndice de cap&iacute;tulos con palabras clave
+
+  Retorno de la app.: OK -&gt;        OK
+                .........OK.........
+---------------------------------------------------------------------
+
+2 La insolacion
+2.1 Parte 1
+
+----------------------------- Testeo --------------------------------
+
+  Comentario: Se mostraron cap&iacute;tulos con la palabra clave *caballo*
+
+  Retorno de la app.: OK -&gt;        OK
+                .........OK.........
+---------------------------------------------------------------------
+
+************************ Fin PRUEBA OK 6 ***********************
+*******************************************************************
+
+**************************************************************************
+  PRUEBA OK 7: ELIMINAR PALABRAS CLAVE
+**************************************************************************
+Horacio Quiroga - Cuentos
+1 El solitario: camino 
+2 La insolacion: CABALLO 
+  2.1 Parte 1: caballo 
+  2.2 Parte 2: 
+    2.2.1 Seccion 1: 
+    2.2.2 Seccion 2: 
+  2.3 Parte 3: 
+    2.3.1  Seccion 3: 
+3 El alambre de pua: 
+
+----------------------------- Testeo --------------------------------
+
+  Comentario: Se mostr&oacute; el &iacute;ndice de cap&iacute;tulos con palabras clave
+
+  Retorno de la app.: OK -&gt;        OK
+                .........OK.........
+---------------------------------------------------------------------
+
+
+----------------------------- Testeo --------------------------------
+
+  Comentario: Se elimin&oacute; la palabra clave *CAMINO* del cap&iacute;tulo 1
+
+  Retorno de la app.: OK -&gt;        OK
+                .........OK.........
+---------------------------------------------------------------------
+
+Horacio Quiroga - Cuentos
+1 El solitario: 
+2 La insolacion: CABALLO 
+  2.1 Parte 1: caballo 
+  2.2 Parte 2: 
+    2.2.1 Seccion 1: 
+    2.2.2 Seccion 2: 
+  2.3 Parte 3: 
+    2.3.1  Seccion 3: 
+3 El alambre de pua: 
+
+----------------------------- Testeo --------------------------------
+
+  Comentario: Se mostr&oacute; el &iacute;ndice de cap&iacute;tulos con palabras clave
+
+  Retorno de la app.: OK -&gt;        OK
+                .........OK.........
+---------------------------------------------------------------------
+
+************************ Fin PRUEBA OK 7 ***********************
+*******************************************************************
+
+**************************************************************************
+  PRUEBA OK 8: MOSTRAR CAMINO DE UN CAP&Iacute;TULO
+**************************************************************************
+Horacio Quiroga - Cuentos
+1 El solitario
+2 La insolacion
+  2.1 Parte 1
+  2.2 Parte 2
+    2.2.1 Seccion 1
+    2.2.2 Seccion 2
+  2.3 Parte 3
+    2.3.1  Seccion 3
+3 El alambre de pua
+
+----------------------------- Testeo --------------------------------
+
+  Comentario: Se mostr&oacute; el &iacute;ndice de cap&iacute;tulos
+
+  Retorno de la app.: OK -&gt;        OK
+                .........OK.........
+---------------------------------------------------------------------
+
+2.2.1 Seccion 1
+2.2 Parte 2
+2 La insolacion
+
+----------------------------- Testeo --------------------------------
+
+  Comentario: Se mostr&oacute; el camino al cap&iacute;tulo 2.2.1
+
+  Retorno de la app.: OK -&gt;        OK
+                .........OK.........
+---------------------------------------------------------------------
+
+************************ Fin PRUEBA OK 8 ***********************
+*******************************************************************
+
+**************************************************************************
+  PRUEBA ERROR 1: AGREGAR CAPITULOS REPETIDOS
+**************************************************************************
+
+----------------------------- Testeo --------------------------------
+
+  Comentario: Se agreg&oacute; el cap&iacute;tulo 1
+
+  Retorno de la app.: OK -&gt;        OK
+                .........OK.........
+---------------------------------------------------------------------
+
+Ya existe cap&iacute;tulo El solitario
+
+----------------------------- Testeo --------------------------------
+
+  Comentario: Error: El cap&iacute;tulo *El solitario* ya existe
+
+  Retorno de la app.: ERROR -&gt;        ERROR
+                .........OK.........
+---------------------------------------------------------------------
+
+
+----------------------------- Testeo --------------------------------
+
+  Comentario: Se agreg&oacute; el cap&iacute;tulo 2
+
+  Retorno de la app.: OK -&gt;        OK
+                .........OK.........
+---------------------------------------------------------------------
+
+Ya existe cap&iacute;tulo La insolacion
+
+----------------------------- Testeo --------------------------------
+
+  Comentario: Error: El cap&iacute;tulo *La insolaci&oacute;n* ya existe
+
+  Retorno de la app.: ERROR -&gt;        ERROR
+                .........OK.........
+---------------------------------------------------------------------
+
+Horacio Quiroga - Cuentos
+1 El solitario
+2 La insolacion
+************************ Fin PRUEBA ERROR 1 ***********************
+*******************************************************************
+
+**************************************************************************
+  PRUEBA ERROR 2: ELIMINAR CAP&Iacute;TULO QUE NO EXISTE
+**************************************************************************
+Horacio Quiroga - Cuentos
+1 El solitario
+2 La insolacion
+  2.1 Parte 1
+  2.2 Parte 2
+    2.2.1 Seccion 1
+    2.2.2 Seccion 2
+  2.3 Parte 3
+    2.3.1  Seccion 3
+3 El alambre de pua
+
+----------------------------- Testeo --------------------------------
+
+  Comentario: Se mostr&oacute; el &iacute;ndice de cap&iacute;tulos
+
+  Retorno de la app.: OK -&gt;        OK
+                .........OK.........
+---------------------------------------------------------------------
+
+No existe el cap&iacute;tulo 8
+
+----------------------------- Testeo --------------------------------
+
+  Comentario: Error: No existe cap&iacute;tulo 8 en el libro
+
+  Retorno de la app.: ERROR -&gt;        ERROR
+                .........OK.........
+---------------------------------------------------------------------
+
+Horacio Quiroga - Cuentos
+1 El solitario
+2 La insolacion
+  2.1 Parte 1
+  2.2 Parte 2
+    2.2.1 Seccion 1
+    2.2.2 Seccion 2
+  2.3 Parte 3
+    2.3.1  Seccion 3
+3 El alambre de pua
+
+----------------------------- Testeo --------------------------------
+
+  Comentario: Se mostr&oacute; el &iacute;ndice de cap&iacute;tulos
+
+  Retorno de la app.: OK -&gt;        OK
+                .........OK.........
+---------------------------------------------------------------------
+
+************************ Fin PRUEBA ERROR 2 ***********************
+*******************************************************************
+
+**************************************************************************
+  PRUEBA ERROR 3: ELIMINAR PALABRA CLAVE QUE NO EXISTE
+**************************************************************************
+Horacio Quiroga - Cuentos
+1 El solitario: camino 
+2 La insolacion: CABALLO 
+  2.1 Parte 1: caballo 
+  2.2 Parte 2: 
+    2.2.1 Seccion 1: 
+    2.2.2 Seccion 2: 
+  2.3 Parte 3: 
+    2.3.1  Seccion 3: 
+3 El alambre de pua: 
+
+----------------------------- Testeo --------------------------------
+
+  Comentario: Se mostr&oacute; el &iacute;ndice de cap&iacute;tulos con palabras clave
+
+  Retorno de la app.: OK -&gt;        OK
+                .........OK.........
+---------------------------------------------------------------------
+
+No existe la palabra clave CAMINO en el cap&iacute;tulo 3
+
+----------------------------- Testeo --------------------------------
+
+  Comentario: Error: El cap&iacute;tulo 3 no tiene palabra clave *CAMINO*
+
+  Retorno de la app.: ERROR -&gt;        ERROR
+                .........OK.........
+---------------------------------------------------------------------
+
+Horacio Quiroga - Cuentos
+1 El solitario: camino 
+2 La insolacion: CABALLO 
+  2.1 Parte 1: caballo 
+  2.2 Parte 2: 
+    2.2.1 Seccion 1: 
+    2.2.2 Seccion 2: 
+  2.3 Parte 3: 
+    2.3.1  Seccion 3: 
+3 El alambre de pua: 
+
+----------------------------- Testeo --------------------------------
+
+  Comentario: Se mostr&oacute; el &iacute;ndice de cap&iacute;tulos con palabras clave
+
+  Retorno de la app.: OK -&gt;        OK
+                .........OK.........
+---------------------------------------------------------------------
+
+************************ Fin PRUEBA ERROR 3 ***********************
+*******************************************************************
+
+
+  +------------------------------+
+    RESULTADOS DE LA PRUEBA    
+    Pruebas Correctas: 40
+    Pruebas Incorrectas: 0
+    Pruebas NI: 0
+  +------------------------------+
+
+BUILD SUCCESSFUL (total time: 1 second)
+</p></pre>
